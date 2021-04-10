@@ -11,10 +11,16 @@ var errRequestFailed = errors.New("req error")
 func main() {
 	var results = make(map[string]string)
 	urls := []string{
-		"http://google.com",
-		"http://www.airbnb.com",
-		"http://www.reddit.com",
+		"https://google.com",
+		"https://www.airbnb.com",
+		"https://www.reddit.com",
+		"https://soundcloud.com",
+		"https://facebook.com",
+		"https://instagram.com",
+		"https://nomadcoders.co",
+		"https://amazon.com",
 	}
+
 	for _, url := range urls {
 		// fmt.Println(url)
 		result := "ok"
@@ -26,6 +32,7 @@ func main() {
 	}
 	// results["hi"] = "hello"
 	// fmt.Println(results)
+
 	for url, result := range results {
 		fmt.Println(url, result)
 	}
